@@ -5,9 +5,9 @@
     <title>
       𓃹
     </title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Jacquard+12+Charted&family=Rubik+80s+Fade&family=Sixtyfour+Convergence&family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Jacquard+12+Charted&family=Rubik+80s+Fade&family=Sixtyfour+Convergence&family=VT323&display=swap" rel="stylesheet">
     <style>
       body {
         background-image: url('dithered.png');
@@ -25,28 +25,57 @@
         position: absolute;
         top: 20%;
         right: 10%;
+        animation-name: bord;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
 
       }
-      
+
+      @keyframes bord {
+        0% {
+          border-color: red;
+        }
+
+        20% {
+          border-color: orange;
+        }
+
+        40% {
+          border-color: yellow;
+        }
+
+        60% {
+          border-color: green;
+        }
+
+        80% {
+          border-color: blue;
+        }
+
+        100% {
+          border-color: magenta;
+        }
+      }
+
       .text {
         height: 50em;
       }
-      
-    .imageBox {
-      position: relative;
-      float: left;
-    }
 
-    .imageBox .hoverImg {
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: none;
-    }
+      .imageBox {
+        position: relative;
+        float: left;
+      }
 
-    .imageBox:hover .hoverImg {
-      display: block;
-    }
+      .imageBox .hoverImg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+      }
+
+      .imageBox:hover .hoverImg {
+        display: block;
+      }
 
       #navba {
         list-style-type: none;
@@ -56,12 +85,12 @@
         position: fixed;
         top: 0;
         overflow: hidden;
-        
+
       }
 
       li a {
         font-size: 20px;
-        border: 4px #5f9403;
+        border: 4px;
         border-style: outset;
         display: block;
         width: 8em;
@@ -69,16 +98,20 @@
         background-color: rgba(255, 255, 255, 0.7);
         padding: 0.5em;
         font-family: "VT323", monospace;
+        animation-name: bord;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
       }
-      li a.hover{
+
+      li a.hover {
         background-color: white;
       }
 
-        a:visited {
+      a:visited {
         color: #375c0c;
         text-decoration: none;
       }
-      
+
       a:link {
         color: #375c0c;
         text-decoration: none;
@@ -119,11 +152,11 @@
       h4 {
         font-family: "VT323";
       }
-      
-      h4{
+
+      h4 {
         font-size: 23px;
       }
-      
+
       th,
       td,
       p {
@@ -138,11 +171,11 @@
       </h1>
       <div class="text">
         <div id="imagebox">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-           <script src="sketch.js"></script>
-           </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+          <link rel="stylesheet" type="text/css" href="style.css">
+          <script src="sketch.js"></script>
+        </div>
       </div>
     </div>
     <ul id="navba">
