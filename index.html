@@ -19,7 +19,7 @@
         border: 4px #5f9403;
         border-style: outset;
         width: 57em;
-        height: 40em;
+        height: 43em;
         background-color: rgba(255, 255, 255, 0.8);
         clear: both;
         position: absolute;
@@ -34,7 +34,7 @@
       @keyframes bord {
         0% {
           border-color: red;
-          
+
         }
 
         20% {
@@ -61,23 +61,19 @@
       }
 
       .text {
-        height: 50em;
+        height: 53em;
       }
 
-      .imageBox {
-        position: relative;
-        float: left;
-      }
-
-      .imageBox .hoverImg {
+      .poto {
         position: absolute;
-        left: 0;
-        top: 0;
-        display: none;
+        left: 30%;
       }
 
-      .imageBox:hover .hoverImg {
-        display: block;
+      .darnit {
+        position: absolute;
+        left: -50%;
+        top: 90%;
+        width: 44em;
       }
 
       #navba {
@@ -93,7 +89,7 @@
 
       li a {
         font-size: 20px;
-         color: #ff3098;
+        color: #ff3098;
         border: 4px;
         border-style: outset;
         display: block;
@@ -127,7 +123,7 @@
       }
 
 
-            li a:visited {
+      li a:visited {
         text-decoration: none;
         color: #d11372;
       }
@@ -175,24 +171,25 @@
       p {
         font-size: 20px;
       }
-                .img1 {
-      opacity: 0;
-    }
-    
-    .img2 {
-      opacity: 1;
-      
-    }
-    
-    .img1:hover {
-      opacity: 1;
-    }
 
-     .man {
+      .img1 {
+        opacity: 0;
+      }
+
+      .img2 {
+        opacity: 1;
+
+      }
+
+      .img1:hover {
+        opacity: 1;
+      }
+
+      .man {
         height: 200px;
-         position: absolute;
-        top: 110%;
-          left: 35%;
+        position: absolute;
+        top: 115%;
+        left: 35%;
       }
     </style>
   </head>
@@ -202,17 +199,28 @@
         WELCOME TO THE PELAGIC ZONE!
       </h1>
       <div class="text">
-          <img src="gobeh.gif" alt="you know who it is">
+        <div class="poto">
+          <img src="rolle.gif" alt="gif of isopod rotating">
+          <h4>
+            Hi!!! Welcome to my <a href="https://openinfluence.com/wp-content/uploads/Screen-Shot-2019-03-12-at-2.43.38-PM-min.png" target="_blank">website</a>
+          </h4>
+          <div class="darnit">
+            <h4>
+              This is a place where I've collected and catalogued some of my interests. You can find a list of some of the media I enjoy, as well as a small collection of places I enjoy going to/ wandering around in. Remember to click on <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank"> links </a> and enjoy your stay!
+            </h4>
+          </div>
         </div>
-      </div>
-                        <div class="man">
 
-               <img class="img2" src="bbaba.png" alt="big mouth billy bass" width="500px">
       </div>
-      <div class="man">
-        <img class="img1" src="bbab.png" alt="big mouth billy bass" width="500px">
-      </div>
-    
+    </div>
+    <div class="man">
+
+      <img class="img2" src="bbaba.png" alt="big mouth billy bass" width="500px">
+    </div>
+    <div class="man">
+      <img class="img1" src="bbab.png" alt="big mouth billy bass" width="500px">
+    </div>
+
     <ul id="navba">
       <li><a href="https://lizacentipede.github.io/Website-homepage/#contact">Home</a></li>
       <li><a href="https://lizacentipede.github.io/Things-I-like/">Things I Like</a></li>
